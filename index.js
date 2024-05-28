@@ -1,10 +1,11 @@
 (function() {
     'use strict';
   
-    // Replace this with the URL of your desired image
+    // Source Image
     const newImageUrl = 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg';
     
   
+    // Selection of Image holders and replacement
     function replaceProfilePictures() {
       const profilePictures = document.querySelectorAll('.evi-image');
   
@@ -13,6 +14,8 @@
       });
     }
   
+    // Loader : 
+    
     function waitForPageLoad() {
       const observer = new MutationObserver(replaceProfilePictures);
       const targetNode = document.querySelector('body');
